@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Daftar | Inventaris</title>
+	{{ style('style') }} 
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body id="bg-login">
+	<div class="box-login">
+		<h2>Daftar</h2>
+		<form action="/daftar" method="POST">
+        {{ csrfField() }}
+			<input type="text" name="username" placeholder="Username" class="input-control">
+			<input type="password" name="password" placeholder="Password" class="input-control">
+			<input type="submit" name="submit" value="Daftar" class="button">
+            <a href="/login">Login</a>
+		</form> 
+	</div>
+
+</body>
+</html>
